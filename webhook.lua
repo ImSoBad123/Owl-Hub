@@ -41,7 +41,7 @@ while wait() do
         game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_net@0.1.0"):WaitForChild("net"):WaitForChild("RF/ClaimPlaytimeReward"):InvokeServer(unpack(args))
 end
 
-if _G.DoiServer then
+if _G.DoiServer == true then
     print("Doi Server Status: Working")
     wait(_G.TimeDoiServer)
     local Player = game.Players.LocalPlayer    

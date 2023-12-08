@@ -44,4 +44,5 @@ local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKhol
 
 if _G.DoiServer then
     wait(_G.TimeDoiServer)
+    module:Teleport(game.PlaceId)
 end

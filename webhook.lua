@@ -35,8 +35,6 @@ while wait() do
         
         game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_net@0.1.0"):WaitForChild("net"):WaitForChild("RF/ClaimPlaytimeReward"):InvokeServer(unpack(args))
 end
-repeat wait() until
-game:IsLoaded()
 print("Start Count")
 wait(1860)
     local Player = game.Players.LocalPlayer    

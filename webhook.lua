@@ -40,9 +40,9 @@ while wait() do
         
         game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_net@0.1.0"):WaitForChild("net"):WaitForChild("RF/ClaimPlaytimeReward"):InvokeServer(unpack(args))
 end
-local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
 
 if _G.DoiServer then
     wait(_G.TimeDoiServer)
-    module:Teleport(game.PlaceId)
+        local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
+        module:Teleport(game.PlaceId)
 end

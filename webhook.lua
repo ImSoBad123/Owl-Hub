@@ -1,4 +1,5 @@
 wait(3)
+print("work")
 _G.DoiServer = true
 _G.TimeDoiServer = "1860"
 

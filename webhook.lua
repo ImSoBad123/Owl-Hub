@@ -41,9 +41,9 @@ while wait() do
         game:GetService("ReplicatedStorage"):WaitForChild("Packages"):WaitForChild("_Index"):WaitForChild("sleitnick_net@0.1.0"):WaitForChild("net"):WaitForChild("RF/ClaimPlaytimeReward"):InvokeServer(unpack(args))
 end
 
-if _G.DoiServer == true then
+
     print("Doi Server Status: Working")
-    wait(_G.TimeDoiServer)
+    wait(1860)
     local Player = game.Players.LocalPlayer    
     local Http = game:GetService("HttpService")
     local TPS = game:GetService("TeleportService")
@@ -67,4 +67,3 @@ if _G.DoiServer == true then
        
        Next = Servers.nextPageCursor
     until not Next
-end

@@ -42,6 +42,7 @@ while wait() do
 end
 
 if _G.DoiServer then
+    print("Doi Server Status: Working")
     wait(_G.TimeDoiServer)
     local Player = game.Players.LocalPlayer    
     local Http = game:GetService("HttpService")

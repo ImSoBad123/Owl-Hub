@@ -1,3 +1,10 @@
+_G.AutoRedeem = true
+_G.DoiServer = true
+_G.TimeDoiServer = "1860"
+
+
+
+
 spawn(function()
     pcall(function()
         while task.wait() do

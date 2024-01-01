@@ -1,6 +1,6 @@
 _G.AutoRedeem = true
 _G.DoiServer = true
-_G.TimeDoiServer = "1860"
+_G.TimeDoiServer = "1560"
 
 
 
@@ -49,10 +49,6 @@ spawn(function()
     end)
 end)
 
-repeat wait(3) until _G.AutoRedeem
-local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
-local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-
 spawn(function()
     pcall(function()
         if _G.DoiServer then
@@ -63,8 +59,23 @@ spawn(function()
                 Time = 3.5
             })
             wait(_G.TimeDoiServer)
-            module:Teleport(game.PlaceId)
+            game:GetService("TeleportService"):Teleport(game.PlaceId, game.Players.LocalPlayer)
         end
     end)
 end)
+
+
+local bb=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+bb:CaptureController()bb:ClickButton2(Vector2.new())
+OrionLib:MakeNotification({
+	Name = "Anti AFK",
+	Content = "Status: Active",
+	Image = "rbxassetid://4483345998",
+	Time = 3.5
+})
+end)
+
+
+
 OrionLib:Init()
